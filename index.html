@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="text-secondary">
+          Generate a Random
+          <span class="text-primary d-block animate__animated animate__swing"
+            >Password</span
+          >
+        </h1>
+        <p class="text-secondary animate__animated animate__fadeIn">
+          Never use an insecure password again.
+        </p>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <form action="" >
+        <div class="inputs">
+          <div class="userInput">
+              <input
+                placeholder="#"
+                class="userInputBox text-center"
+                type="range"
+                min="8"
+                max="20"
+                value="8"
+                oninput="rangeValue.innerText = this.value"
+                name="length-input"
+                id="lengthInput"
+              />
+            <p id="rangeValue" for="lengthInput" class="text-primary"></p>
+
+            </label>
+          </div>
+          <div class="checkboxes">
+            <label for="uppercaseCheckbox" class="text">
+              <input
+                type="checkbox"
+                name="uppercase"
+                id="uppercaseCheckbox"
+                class="uppercase-checkbox checkbox"
+              />
+              Include Uppercase</label
+            >    <label for="lowerCaseCheckbox" class="text">
+              <input
+                type="checkbox"
+                name="lowercase"
+                id="lowerCaseCheckbox"
+                class="lowercase-checkbox checkbox"
+              />
+              Include Lowercase</label
+            >
+            <label for="symbolCheckbox" class="text">
+              <input
+                type="checkbox"
+                name="symbols"
+                id="symbolCheckbox"
+                class="symbol-checkbox checkbox"
+              />
+              Include Symbols</label
+            >
+            <label for="numbersCheckbox" class="text">
+              <input
+                type="checkbox"
+                name="numbers"
+                id="numbersCheckbox"
+                class="numbers-checkbox checkbox"
+              />
+              Include Numbers</label
+            >
+          </div>
+        </div>
+        </form>
+        <button
+          class="genBtn text-bold animate__animated animate__bounceInRight"
+          type="button"
+          id="genBtn"
+        >
+          Generate passwords
+        </button>
+        <div class="container">
+          <div class="pass-display">
+            <p class="passwords passwordOne text-center" id="password">
+            </p>
+            <i class="fa-solid fa-copy"id="copy"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/app/index.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </body>
+</html>
