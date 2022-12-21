@@ -1,7 +1,7 @@
 export const selectOption =  {
     text: "Select an option!",
     duration: 3000,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "",
     newWindow: true,
     close: true,
     gravity: "top", // `top` or `bottom`
@@ -20,7 +20,7 @@ export const selectOption =  {
   export const copied = {
     text: "Copied",
     duration: 3000,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "",
     newWindow: true,
     close: true,
     gravity: "bottom", // `top` or `bottom`
@@ -39,7 +39,7 @@ export const selectOption =  {
   export const dragSlider = {
     text: "Drag the slider for length of password.",
     duration: 4000,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "",
     newWindow: true,
     close: true,
     gravity: "top", // `top` or `bottom`
@@ -57,7 +57,7 @@ export const selectOption =  {
 export const selectAnOption = {
     text: "And select an option",
     duration: 4000,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "",
     newWindow: true,
     close: true,
     gravity: "top", // `top` or `bottom`

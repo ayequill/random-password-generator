@@ -22,7 +22,7 @@ document.addEventListener("click", (e) => {
 
 setTimeout(() => {
   Toastify(selectAnOption).showToast();
-}, 4000);
+}, 3000);
 
 setTimeout(() => {
   Toastify(dragSlider).showToast();
