@@ -1,5 +1,4 @@
 import { alpha, lowerCaseArray,symbolsArray,numbersArray} from '/app/data.js';
-// import Toastify from '/app/toastify-js'
 const upperCase = document.getElementById('uppercaseCheckbox')
 const lowerCase = document.getElementById('lowerCaseCheckbox')
 const symbols = document.getElementById('symbolCheckbox')
@@ -37,16 +36,20 @@ export const getInput = (str)=>{
     }
   }else{
     Toastify({
-      text: "This is a toast",
+      text: "Select an option!",
       duration: 3000,
       destination: "https://github.com/apvarun/toastify-js",
       newWindow: true,
       close: true,
       gravity: "top", // `top` or `bottom`
-      position: "left", // `left`, `center` or `right`
+      position: "center", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
-        background: "linear-gradient(to right, #00b09b, #96c93d)",
+        background: "#F7ED05ff",
+        color: "#1B5E61ff",
+        fontWeight: "bold",
+        fontSize: "1.4rem",
+        borderRadius: "1.25em",
       },
       onClick: function(){} // Callback after click
     }).showToast();
@@ -61,5 +64,6 @@ export const getInput = (str)=>{
 export const copyPassword = () => {
   const copyText = document.getElementById('password')
   navigator.clipboard.writeText(copyText.textContent)
+  
 }
 
