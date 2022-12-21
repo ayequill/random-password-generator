@@ -69,16 +69,9 @@ label{
 }
 
 .inputs{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    // .userInput{
-    //     display: flex;
-    //     align-items: center;
-    //     margin-top: 1em;
-    //     border: none;
-    //     border-radius: 0.5em;
-    // }
+
+    
+    }
     .userInputBox{
         display: block;
         margin-top: 1em;
@@ -94,8 +87,8 @@ label{
         display: flex;
         flex-direction: column;
         cursor: pointer;
+        
     }
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -150,7 +143,7 @@ input[type=number] {
 
 }
 .checkbox{
-    color: $aureolin;
+// appearance: none;
 }
 .fa-copy{
     // display: flex;

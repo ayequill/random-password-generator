@@ -4,6 +4,7 @@ import {
   symbolsArray,
   numbersArray,
 } from "/app/data.js";
+import { selectOption, copied } from "/app/alerts.js";
 const upperCase = document.getElementById("uppercaseCheckbox");
 const lowerCase = document.getElementById("lowerCaseCheckbox");
 const symbols = document.getElementById("symbolCheckbox");
@@ -44,24 +45,7 @@ export const randomizePassword = () => {
         selectedOption[Math.floor(Math.random() * selectedOption.length)];
     }
   } else {
-    Toastify({
-      text: "Select an option!",
-      duration: 3000,
-      destination: "https://github.com/apvarun/toastify-js",
-      newWindow: true,
-      close: true,
-      gravity: "top", // `top` or `bottom`
-      position: "center", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
-      style: {
-        background: "#F7ED05ff",
-        color: "#1B5E61ff",
-        fontWeight: "bold",
-        fontSize: "1.4rem",
-        borderRadius: "1.25em",
-      },
-      onClick: function () {}, // Callback after click
-    }).showToast();
+    Toastify(selectOption).showToast();
   }
 };
 
@@ -72,4 +56,5 @@ export const renderToDom = () => {
 export const copyPassword = () => {
   const copyText = document.getElementById("password");
   navigator.clipboard.writeText(copyText.textContent);
+  Toastify(copied).showToast();
 };
