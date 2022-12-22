@@ -1,0 +1,30 @@
+{
+  "name": "aye-password-gen",
+  "version": "1.0.0",
+  "description": "A Random password genarator web app built with HTML, CSS & JS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayequill/random-password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "random",
+    "passwords",
+    "random",
+    "password",
+    "generator",
+    "password",
+    "generator"
+  ],
+  "author": "Siaw A. Nicholas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayequill/random-password-generator/issues"
+  },
+  "homepage": "https://github.com/ayequill/random-password-generator#readme"
+}
