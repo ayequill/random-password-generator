@@ -4,9 +4,9 @@ export const selectOption =  {
     destination: "",
     newWindow: true,
     close: true,
-    gravity: "top", // `top` or `bottom`
-    position: "center", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "top",
+    position: "center", 
+    stopOnFocus: true, 
     style: {
       background: "#F7ED05ff",
       color: "#1B5E61ff",
@@ -14,7 +14,7 @@ export const selectOption =  {
       fontSize: "1.4rem",
       borderRadius: "1.25em",
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () {}, 
   }
 
   export const copied = {
@@ -23,9 +23,9 @@ export const selectOption =  {
     destination: "",
     newWindow: true,
     close: true,
-    gravity: "bottom", // `top` or `bottom`
-    position: "center", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "bottom",
+    position: "center",
+    stopOnFocus: true, 
     style: {
       background: "#F7ED05ff",
       color: "#1B5E61ff",
@@ -33,7 +33,7 @@ export const selectOption =  {
       fontSize: "1.4rem",
       borderRadius: "1.25em",
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () {},
   }
 
   export const dragSlider = {
@@ -42,8 +42,8 @@ export const selectOption =  {
     destination: "",
     newWindow: true,
     close: true,
-    gravity: "top", // `top` or `bottom`
-    position: "center", // `left`, `center` or `right`
+    gravity: "top", 
+    position: "center",
     stopOnFocus: true, // Prevents dismissing of toast on hover
     style: {
       background: "#F7ED05ff",
@@ -52,7 +52,7 @@ export const selectOption =  {
       fontSize: "1.4rem",
       borderRadius: "1.25em",
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () {}, 
   }
 export const selectAnOption = {
     text: "And select an option",
@@ -60,9 +60,9 @@ export const selectAnOption = {
     destination: "",
     newWindow: true,
     close: true,
-    gravity: "top", // `top` or `bottom`
-    position: "center", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "top", 
+    position: "center", 
+    stopOnFocus: true,
     style: {
       background: "#F7ED05ff",
       color: "#1B5E61ff",
@@ -70,5 +70,5 @@ export const selectAnOption = {
       fontSize: "1.4rem",
       borderRadius: "1.25em",
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () {},
   }
