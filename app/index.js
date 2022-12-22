@@ -1,10 +1,10 @@
-import { dragSlider,selectAnOption } from "/app/alerts.js";
+import { dragSlider,selectAnOption } from "./modules/alerts.js";
 import {
   getInput,
   randomizePassword,
   renderToDom,
   copyPassword,
-} from "/app/functions.js";
+} from "./modules/functions.js";
 let options = "";
 
 document.addEventListener("click", (e) => {

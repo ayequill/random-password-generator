@@ -3,8 +3,8 @@ import {
   lowerCaseArray,
   symbolsArray,
   numbersArray,
-} from "/app/data.js";
-import { selectOption, copied } from "/app/alerts.js";
+} from "./data.js";
+import { selectOption, copied } from "./alerts.js";
 const upperCase = document.getElementById("uppercaseCheckbox");
 const lowerCase = document.getElementById("lowerCaseCheckbox");
 const symbols = document.getElementById("symbolCheckbox");
