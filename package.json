@@ -1,6 +1,6 @@
 {
   "name": "aye-password-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Random password genarator web app built with HTML, CSS & JS ",
   "main": "index.js",
   "scripts": {
