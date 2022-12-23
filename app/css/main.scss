@@ -19,9 +19,10 @@ $dark-jungle-green: #353535;
 body {
   background: $black;
   font-family: "Share Tech", sans-serif;
+  min-height: 100vh;
 }
 .header {
-  padding: 2em;
+  padding: 1em;
 }
 
 .container {
@@ -45,7 +46,7 @@ body {
 
 
 .header h1 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   text-shadow: 0 1px $deep-jungle-green ;
   font-weight: bolder;
 }
@@ -67,13 +68,12 @@ body {
 label {
   color: $deep-jungle-green;
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin: 0.3em 0;
 }
 .userInputBox {
   display: block;
   margin-top: 1em;
-  padding: 0.4em;
   width: 90%;
   background-color: $aureolin;
   border: none;
@@ -101,13 +101,13 @@ input[type="number"] {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 100%;
-  padding: 1.4em;
-  font-size: 1.4rem;
+  padding: 1em;
+  font-size: 1rem;
   background: $aureolin;
   color: $deep-jungle-green;
   border: none;
   border-radius: 0.6em;
-  margin: 2em 0;
+  margin: 1em 0;
   cursor: pointer;
   &:hover,&:focus {
     color: $aureolin;
@@ -115,7 +115,7 @@ input[type="number"] {
   }
 }
 .pass-display {
-  padding: 1.8em;
+  padding: 0.5em;
   width: 100%;
   border-radius: 0.5em;
   display: flex;
@@ -131,7 +131,7 @@ input[type="number"] {
   border-radius: 0.3em;
   display: flex;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
@@ -149,7 +149,7 @@ input[type="number"] {
   // display: flex;
   // align-self: center;
   // justify-self: end;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: $aureolin;
   cursor: pointer;
   top: 0.8em;
@@ -159,24 +159,25 @@ input[type="number"] {
 .history{
   margin-top: 1em;
   background-color: $deep-jungle-green;
-  padding: 1.8em;
+  padding: 0.5em;
   border-radius: 0.5em;
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 .history p{
   margin-bottom: 0.5em;
 
+
 }
 .history h4{
   background-color: $aureolin;
-  padding: 0.5em;
+  // padding: 0.5em;
   border-radius: 0.5em;
   margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 .history h4 span {
   text-align: right;
