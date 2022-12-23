@@ -70,35 +70,6 @@ label {
   font-size: 1.4rem;
   margin: 0.3em 0;
 }
-
-.inputs {
-  // input[type="checkbox"] {
-  //     /* Add if not using autoprefixer */
-  //     -webkit-appearance: none;
-  //     appearance: none;
-  //     /* For iOS < 15 to remove gradient background */
-  //     background-color: #fff;
-  //     /* Not removed via appearance */
-  //     margin: 0;
-  //     font: inherit;
-  //     color: currentColor;
-  //     width: 1em;
-  //     height: 1em;
-  //     border: 0.10em solid currentColor;
-  //     border-radius: 0.15em;
-  //     transform: translateY(-0.075em);
-  //     // display: grid;
-  //     // place-content: center;
-  //   }
-  //   input[type="checkbox"]::before {
-  //     content: "";
-  //     width: 0.65em;
-  //     height: 0.65em;
-  //     transform: scale(0);
-  //     transition: 120ms transform ease-in-out;
-  //     box-shadow: inset 1em 1em var(--form-control-color);
-  //   }
-}
 .userInputBox {
   display: block;
   margin-top: 1em;
@@ -153,6 +124,7 @@ input[type="number"] {
   flex: 1 50%;
   background-color: $deep-jungle-green;
 }
+
 .passwords {
   background-color: $deep-jungle-green;
   // padding: 1.8em;
@@ -160,6 +132,7 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
+  letter-spacing: 1px;
   line-height: 1.5rem;
 }
 @media (min-width: 480px) {
@@ -183,4 +156,34 @@ input[type="number"] {
   left: 12em;
 }
 
+.history{
+  margin-top: 1em;
+  background-color: $deep-jungle-green;
+  padding: 1.8em;
+  border-radius: 0.5em;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.history p{
+  margin-bottom: 0.5em;
+
+}
+.history h4{
+  background-color: $aureolin;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.history h4 span {
+  text-align: right;
+  cursor: pointer;
+}
+#savedPasswords{
+  display: flex;
+  flex-direction: column-reverse;
+}
 //  #860029 #29132e #6a7e6a

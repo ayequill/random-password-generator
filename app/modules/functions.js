@@ -1,19 +1,15 @@
-import {
-  alpha,
-  lowerCaseArray,
-  symbolsArray,
-  numbersArray,
-} from "./data.js";
+import { alpha, lowerCaseArray, symbolsArray, numbersArray } from "./data.js";
 import { selectOption, copied } from "./alerts.js";
 const upperCase = document.getElementById("uppercaseCheckbox");
 const lowerCase = document.getElementById("lowerCaseCheckbox");
 const symbols = document.getElementById("symbolCheckbox");
 const numbers = document.getElementById("numbersCheckbox");
-const passLength = document.getElementById("lengthInput");
-const rangeValue = document.getElementById("rangeValue");
 export const passwordDom = document.getElementById("password");
 let randomPassword = "";
+const savedPasswords = JSON.parse(localStorage.getItem("password"));
+
 let selectedOption = [];
+let history = [];
 
 export const getInput = (str) => {
   if (upperCase.checked) {
@@ -44,6 +40,8 @@ export const randomizePassword = () => {
       randomPassword +=
         selectedOption[Math.floor(Math.random() * selectedOption.length)];
     }
+    history.push(randomPassword);
+    localStorage.setItem("password", JSON.stringify(history));
   } else {
     Toastify(selectOption).showToast();
   }
@@ -51,10 +49,28 @@ export const randomizePassword = () => {
 
 export const renderToDom = () => {
   passwordDom.innerHTML = randomPassword;
+  document.getElementById(
+    "savedPasswords"
+  ).innerHTML += `<p>${randomPassword}</p>`;
+
   randomPassword = "";
 };
 export const copyPassword = () => {
   const copyText = document.getElementById("password");
   navigator.clipboard.writeText(copyText.textContent);
   Toastify(copied).showToast();
+};
+
+export const savePassword = () => {
+  if (savedPasswords) {
+    history = savedPasswords;
+  }
+
+  history.forEach((password) => {
+    document.getElementById("savedPasswords").innerHTML += `<p>${password}</p>`;
+  });
+};
+
+export const clearStorage = () => {
+  localStorage.clear();
 };

@@ -1,11 +1,15 @@
-import { dragSlider,selectAnOption } from "./modules/alerts.js";
+import { cleared, dragSlider, selectAnOption } from "./modules/alerts.js";
 import {
   getInput,
   randomizePassword,
   renderToDom,
   copyPassword,
+  savePassword,
+  clearStorage,
 } from "./modules/functions.js";
 let options = "";
+
+savePassword();
 
 document.addEventListener("click", (e) => {
   if (e.target.id === "genBtn") {
@@ -16,7 +20,11 @@ document.addEventListener("click", (e) => {
   }
   if (e.target.id === "copy") {
     copyPassword();
-
+  }
+  if (e.target.id === "clearBtn") {
+    clearStorage();
+    document.getElementById("savedPasswords").innerHTML = "";
+    Toastify(cleared).showToast();
   }
 });
 

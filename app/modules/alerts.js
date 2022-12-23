@@ -72,3 +72,22 @@ export const selectAnOption = {
     },
     onClick: function () {},
   }
+  
+  export const cleared = {
+    text: "Cleared 🗑️ ",
+    duration: 4000,
+    destination: "",
+    newWindow: true,
+    close: true,
+    gravity: "top", 
+    position: "center", 
+    stopOnFocus: true,
+    style: {
+      background: "#F7ED05ff",
+      color: "#1B5E61ff",
+      fontWeight: "bold",
+      fontSize: "1.4rem",
+      borderRadius: "1.25em",
+    },
+    onClick: function () {},
+  }

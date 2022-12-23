@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aye-password-gen@1.0.1/app/css/main.min.css"/>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/aye-password-gen@1.0.1/app/index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -23,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/app/css/main.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <title>Password Generator</title>
   </head>
   <body>
@@ -98,23 +96,33 @@
             >
           </div>
         </div>
-        </form>
         <button
-          class="genBtn text-bold animate__animated animate__bounceInRight"
-          type="button"
-          id="genBtn"
-        >
-          Generate password
-        </button>
+        class="genBtn text-bold animate__animated animate__bounceInRight"
+        type="button"
+        id="genBtn"
+      >
+        Generate password
+      </button>
+        </form>
+       
         <div class="container">
           <div class="pass-display">
             <p class="passwords passwordOne text-center" id="password">
             </p>
             <i class="fa-solid fa-copy"id="copy"></i>
+            
+          </div>
+          <div id="history" class="history">
+            <h4 class="text-primary">History <span id="clearBtn">Clear <i class="fa-solid fa-trash"></i></span></h4>
+            <div id="savedPasswords">
+
+            </div>
           </div>
         </div>
+        
       </div>
     </section>
+    <script src="/app/index.js" type="module"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     
   </body>
